@@ -67,3 +67,7 @@ C:\Development\BookAppointment\BookAppointment\BookAppointment\bin\Microsoft.Owi
 C:\Development\BookAppointment\BookAppointment\BookAppointment\obj\Debug\BookAppointment.csprojResolveAssemblyReference.cache
 C:\Development\BookAppointment\BookAppointment\BookAppointment\obj\Debug\BookAppointment.dll
 C:\Development\BookAppointment\BookAppointment\BookAppointment\obj\Debug\BookAppointment.pdb
+C:\Development\BookAppointment\BookAppointment\BookAppointment\obj\Debug\BookAppointment.Migrations.AddBusinnessAndServicesTable.resources
+C:\Development\BookAppointment\BookAppointment\BookAppointment\obj\Debug\BookAppointment.csproj.GenerateResource.Cache
+C:\Development\BookAppointment\BookAppointment\BookAppointment\obj\Debug\BookAppointment.Migrations.insertServices.resources
+C:\Development\BookAppointment\BookAppointment\BookAppointment\obj\Debug\BookAppointment.Migrations.updateFieldsAddAppointmeentTable.resources

@@ -10,7 +10,24 @@ namespace BookAppointment.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            Models.Business lovelyThreading = new Models.Business()
+            {
+                Name = "Lovely Threading",
+                Location = "554 Washington St, Canton, MA, 02021",
+                ServiceProvided = new List<Models.ServiceProvided>()
+                {
+                    new Models.ServiceProvided()
+                    {
+                        ID = 1,
+                        Name = "Threading",
+                        Price = 8,
+                        ServiceTime = new TimeSpan(0,10,0),
+                        Description = "Eyebrows threading"
+                    }
+                }
+            };
+
+            return View(lovelyThreading);
         }
 
         public ActionResult About()

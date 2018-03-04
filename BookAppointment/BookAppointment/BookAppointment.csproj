@@ -173,10 +173,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803030403200_AddBusinnessAndServicesTable.cs" />
+    <Compile Include="Migrations\201803030403200_AddBusinnessAndServicesTable.Designer.cs">
+      <DependentUpon>201803030403200_AddBusinnessAndServicesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803030408101_insertServices.cs" />
+    <Compile Include="Migrations\201803030408101_insertServices.Designer.cs">
+      <DependentUpon>201803030408101_insertServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803031639300_updateFieldsAddAppointmeentTable.cs" />
+    <Compile Include="Migrations\201803031639300_updateFieldsAddAppointmeentTable.Designer.cs">
+      <DependentUpon>201803031639300_updateFieldsAddAppointmeentTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Business.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ServiceProvided.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -189,6 +205,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="readme.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -208,7 +225,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -246,6 +265,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803030403200_AddBusinnessAndServicesTable.resx">
+      <DependentUpon>201803030403200_AddBusinnessAndServicesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803030408101_insertServices.resx">
+      <DependentUpon>201803030408101_insertServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803031639300_updateFieldsAddAppointmeentTable.resx">
+      <DependentUpon>201803031639300_updateFieldsAddAppointmeentTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
